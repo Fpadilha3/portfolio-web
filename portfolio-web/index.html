@@ -1,78 +1,116 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Portfólio Pessoal</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <meta charset="UTF-8" /> <!-- Define a codificação de caracteres como UTF-8 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" /> <!-- Responsividade em dispositivos móveis -->
+  <title>Portfólio Pessoal</title> <!-- Título da página -->
+  <link rel="stylesheet" href="style.css" /> <!-- Link para o arquivo CSS externo -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" /> <!-- Ícones do Font Awesome -->
 </head>
 <body>
 
-  <!-- Header -->
+  <!-- Header: Cabeçalho com logo, nome e menu de navegação -->
   <header class="header">
-    <!-- Logo -->
-    <img src="img/logo.png" alt="Logo Felipe Padilha" class="logo" />
+    <!-- Logo da página -->
+    <img src="https://sdmntprnorthcentralus.oaiusercontent.com/files/00000000-3764-622f-b29c-8658b2476176/raw?se=2025-06-13T21%3A21%3A41Z&sp=r&sv=2024-08-04&sr=b&scid=07242571-aa52-5f05-ac93-7d2096695ff7&skoid=e9d2f8b1-028a-4cff-8eb1-d0e66fbefcca&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-06-13T12%3A03%3A25Z&ske=2025-06-14T12%3A03%3A25Z&sks=b&skv=2024-08-04&sig=nz8QvHY5OHWsvD/JtcjvL9R/RnPLaG86682jL2mz4eY%3D" alt="Logo Felipe Padilha" class="logo" style="height: 60px;" />
+    <!-- Nome do proprietário do portfólio -->
     <h2>Felipe Padilha de Souza</h2>
+    <!-- Navegação principal -->
     <nav class="nav">
       <ul>
-        <li><a href="#projetos">Início</a></li>
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#contato">Contato</a></li>
+        <li><a href="#projetos">Início</a></li> <!-- Link para a seção Projetos -->
+        <li><a href="#sobre">Sobre</a></li> <!-- Link para a seção Sobre Mim -->
+        <li><a href="#competencias">Competências</a></li> <!-- Link para a seção Competências -->
+        <li><a href="#contato">Contato</a></li> <!-- Link para o rodapé Contato -->
       </ul>
     </nav>
   </header>
 
-  <!-- Main -->
+  <!-- Main: Conteúdo principal da página -->
   <main>
 
-    <!-- Section 1: Projetos -->
+    <!-- Seção 1: Projetos -->
     <section id="projetos" class="section">
       <h2>Projetos do GitHub</h2>
 
+      <!-- Card de projeto 1 -->
       <div class="card">
-        <img src="img/projeto1.png" alt="Projeto 1" />
-        <h3>ToDo List App</h3>
-        <a href="https://github.com/Fpadilha3/todo-list" target="_blank">Ver no GitHub</a>
+        <h3>Exercícios Lógica Java</h3>
+        <!-- Imagem do projeto -->
+        <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="Exercícios Lógica Java" style="max-width: 150px; height: auto; display: block; margin-bottom: 10px;" />
+        <!-- Link para o repositório no GitHub -->
+        <a href="https://github.com/Fpadilha3/ExerciciosLogicaJava" target="_blank" rel="noopener noreferrer">Ver no GitHub</a>
       </div>
 
+      <!-- Card de projeto 2 -->
       <div class="card">
-        <img src="img/projeto1.png" alt="Projeto 2" />
-        <h3>Site Responsivo</h3>
-        <a href="https://github.com/Fpadilha3/site-responsivo" target="_blank">Ver no GitHub</a>
+        <h3>Meu Currículo</h3>
+        <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="Meu Currículo" style="max-width: 150px; height: auto; display: block; margin-bottom: 10px;" />
+        <a href="https://github.com/Fpadilha3/introducaodawebAula1/tree/main/curriculocss" target="_blank" rel="noopener noreferrer">Ver no GitHub</a>
       </div>
     </section>
 
-    <!-- Section 2: Sobre Mim -->
+    <!-- Seção 2: Sobre Mim -->
     <section id="sobre" class="section">
       <h2>Sobre Mim</h2>
 
+      <!-- Box com informações do currículo -->
       <aside class="curriculo">
         <h3>Currículo</h3>
         <ul>
           <li><strong>Nome:</strong> Felipe Padilha de Souza</li>
           <li><strong>Formação:</strong> Estudante de TI Módulo 1, 1º ano do Ensino Médio - Ulbra São Lucas</li>
           <li><strong>Experiência:</strong> Estagiário</li>
-          <li>
-            <a href="docs/curriculo.pdf" target="_blank" rel="noopener noreferrer">Baixar currículo (PDF)</a>
-          </li>
         </ul>
       </aside>
 
+      <!-- Box com objetivos profissionais -->
       <aside class="objetivos">
         <h3>Objetivos Profissionais</h3>
         <p>Busco experiência na área de Informática e poder crescer no mercado de trabalho, aprendendo cada vez mais sobre desenvolvimento web.</p>
       </aside>
     </section>
+
+    <!-- Seção 3: Competências -->
+    <section id="competencias" class="section">
+      <h2>Competências</h2>
+
+      <!-- Container para organizar as competências técnicas e pessoais lado a lado -->
+      <div class="competencias-container">
+        <!-- Competências técnicas listadas -->
+        <div class="competencias-tecnicas">
+          <h3>Competências Técnicas</h3>
+          <ul>
+            <li>Lógica de Programação</li>
+            <li>Git e GitHub</li>
+            <li>Básico em Java</li>
+          </ul>
+        </div>
+
+        <!-- Competências pessoais listadas -->
+        <div class="competencias-soft">
+          <h3>Competências Pessoais</h3>
+          <ul>
+            <li>Organização e Disciplina</li>
+            <li>Trabalho em Equipe</li>
+            <li>Aprendizado Rápido</li>
+            <li>Persistência</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
   </main>
 
-  <!-- Footer -->
+  <!-- Footer: Rodapé com redes sociais e contato -->
   <footer id="contato" class="footer">
+    <!-- Ícones de redes sociais -->
     <div class="social">
-      <a href="https://www.linkedin.com/in/felipe-padilha-souza-873a11368/" target="_blank"><i class="fab fa-linkedin"></i></a>
-      <a href="https://github.com/Fpadilha3" target="_blank"><i class="fab fa-github"></i></a>
-      <a href="https://www.instagram.com/f_padilhads" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/in/felipe-padilha-souza-873a11368/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/Fpadilha3" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+      <a href="https://www.instagram.com/f_padilhads" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
     </div>
+    <!-- Informações de contato -->
     <p>Contato:
       <a href="mailto:souzafelipepadilha@gmail.com">souzafelipepadilha@gmail.com</a> |
       <a href="tel:+5551993359795">Telefone: (51) 99335-9795</a>
@@ -81,4 +119,3 @@
 
 </body>
 </html>
-
